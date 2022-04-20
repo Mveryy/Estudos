@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font: normal 18px Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var contador = 0
+        var limite = 10
+        var tabuada = parseInt(window.prompt("Qual tabuada deseja ver ?"))
+        do {
+            var resultado = tabuada * contador
+            parseInt(document.write(tabuada + " x " + contador + " = " + resultado + "</br>"))
+            contador ++ //somar 1 ao valor do contador
+        }
+        while (contador <= limite)
+    </script>
+</body>
+
+</html>

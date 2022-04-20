@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+    <style>
+        body{
+            font: normal 18px Arial;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var aluno = window.prompt('Digite seu nome')
+        var nota1 = Number(window.prompt('Nota 1'))
+        var nota2 = Number(window.prompt('Nota 2'))
+        var nota3 = Number(window.prompt('Nota 3'))
+        var nota4 = Number(window.prompt('Nota 4'))
+        var media = (nota1 + nota2 + nota3 + nota4)/4
+        document.write("O aluno " + aluno + " obteve a média : " + media)
+        var resultado = document.write(media >=7?" Aprovado":" Reprovado")
+        window.document.querySelector(resultado)
+        
+    </script>
+</body>
+</html>
