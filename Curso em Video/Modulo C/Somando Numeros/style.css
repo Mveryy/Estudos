@@ -1,0 +1,11 @@
+body {
+    font: normal 20pt Arial;
+    background: gray;
+}
+input {
+    font: normal 20pt Arial;
+    width: 100px;
+}
+div#res {
+    margin-top: 20px;
+}
