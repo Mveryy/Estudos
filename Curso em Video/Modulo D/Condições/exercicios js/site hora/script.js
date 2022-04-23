@@ -3,7 +3,8 @@ function carregar() {
     var img = document.getElementById("imagem");
     var data = new Date();
     var hora = data.getHours();
-    msg.innerHTML = `Agora são ${hora} horas.`;
+    var min = data.getMinutes();
+    msg.innerHTML = `Agora são ${hora} horas e ${min} minutos.`;
     if (hora >= 0 && hora < 6) {
         // Boa Madrugada
         document.body.style.background = "#432d1c";

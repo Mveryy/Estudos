@@ -7,6 +7,6 @@ var media = (nota1 + nota2 + nota3 + nota4) / 4;
 // document.write("<p>O aluno " + aluno + " obteve a média : " + media + '</p>')
 // var resultado = document.write(media >=7?" <h1>Aprovado</h1>":" <h1>Reprovado</h1>")
 var resultado = media >= 7 ? "Aprovado" : "Reprovado";
-document.querySelector("p").innerText = resultado;
-document.querySelector("p").style.color = media >= 7 ? "green" : "red";
 var tagP = document.querySelector("p");
+tagP.innerText = resultado;
+tagP.style.color = media >= 7 ? "green" : "red";
