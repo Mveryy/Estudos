@@ -1,12 +1,23 @@
 function calc() {
-    var msg = document.getElementById("msg");
-    var contador = 0;
-    var limite = 10;
-    while (contador <= limite) {
-        var resultado = number * contador;
-        var number = document.getElementById("txtnum").value;
-        msg.innerHTML = `${number} x ${contador} = ${resultado}`;
+    let msg = document.getElementById("msg");
+    let select = document.getElementById("select");
+    // limpar(select, msg); // function para limpar o resultado
+    msg.innerHTML = "";
+    select.innerHTML = "";
+    let contador = 1;
+    while (contador <= 10) {
+        let number = document.getElementById("txtnum").value;
+        let option = document.createElement("option");
+        msg.innerHTML += `${number} x ${contador} = ${number * contador}</br>`;
+        option.innerHTML = `${number} x ${contador} = ${number * contador}</br>`; // lista
+        select.appendChild(option);
         contador++;
-        console.log(number);
     }
 }
+
+// function limpar(elemento1, elemento2) {
+//     while (elemento1.hasChildNodes()) {
+//         elemento1.removeChild(elemento1.firstChild);
+//     }
+//     elemento2.innerHTML = "";
+// }

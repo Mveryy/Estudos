@@ -12,16 +12,11 @@ section {
     background: rgb(219, 219, 219);
     border-radius: 10px;
     padding: 15px;
-    text-align: center;
+    /* text-align: center; */
     width: 500px;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.589);
-}
-
-div {
-    text-align: center;
-    padding: 8px;
-    font: normal 20px Arial;
+    line-height: auto;
 }
 
 footer {
