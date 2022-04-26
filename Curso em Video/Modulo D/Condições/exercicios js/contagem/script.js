@@ -15,6 +15,7 @@ function contar() {
             // Contagem crescente
             for (let c = i; c <= f; c += p) {
                 res.innerHTML += `${c} \u{27A1}`;
+                console.log(c);
             }
         } else {
             // Contagem regressiva
