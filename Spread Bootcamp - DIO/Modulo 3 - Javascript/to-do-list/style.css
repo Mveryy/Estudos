@@ -59,6 +59,6 @@ footer {
     margin-top: 50px;
 }
 
-input:checked + label + div {
+/* :checked + label + input{
     color: gray;
-}
+} */

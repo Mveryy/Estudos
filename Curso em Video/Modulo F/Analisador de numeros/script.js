@@ -24,9 +24,15 @@ function finalizar() {
     if (vetor.length == 0) {
         window.alert("Impossivel obter resultados: lista vazia");
     } else {
-        let maior = vetor[0];
-        let menor = vetor[0];
-        let soma = 0;
+        // let maior = vetor[0];
+        // let menor = vetor[0];
+        let maior = Math.max(...vetor); // aplicação do spread
+        let menor = Math.min(...vetor); //
+        // let soma = 0;
+        let soma = vetor.reduce(function (prev, current) {
+            // aplicação do reduce
+            return prev + current;
+        });
         let media = 0;
         for (let pos in vetor) {
             debugger;
@@ -34,8 +40,8 @@ function finalizar() {
             media = soma / vetor.length;
             console.log(`soma = ${vetor[pos]}`);
             console.log(`pos = ${typeof vetor[pos]}`);
-            if (vetor[pos] > maior) maior = vetor[pos];
-            if (vetor[pos] < menor) menor = vetor[pos];
+            // if (vetor[pos] > maior) maior = vetor[pos];
+            // if (vetor[pos] < menor) menor = vetor[pos];
         }
 
         msg.innerHTML = `Ao todo, temos ${vetor.length} números cadastrados<br>
