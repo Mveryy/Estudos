@@ -1,2 +1,2 @@
 # estudos
- Repositório para guardar meus exercícios de estudos
+ Repositório para guardar meus estudos
