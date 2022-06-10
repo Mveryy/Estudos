@@ -1,0 +1,25 @@
+.nav {
+    display: flex;
+    align-items: center;
+    background-color: #21222a;
+    padding: 1.8em 1.5em;
+}
+
+.nav--logo {
+    width: 30px;
+}
+
+.nav > h3 {
+    margin-left: 0.3em;
+    font-size: 20px;
+    color: #60dafb;
+    font-weight: 700;
+}
+
+.nav > h4 {
+    position: absolute;
+    right: 0;
+    margin-right: 1.5em;
+    color: #deebf8;
+    font-weight: 600;
+}

@@ -1,0 +1,29 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 4em 2em;
+    background-image: url("../src/images/react-icon-large.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+}
+
+.main--title {
+    color: white;
+    margin-bottom: 0.5em;
+    font-size: 40px;
+}
+
+.main--list {
+    padding: 0 2.5em;
+    color: #c8d0db;
+    font-size: 16px;
+    line-height: 2em;
+    max-width: 600px;
+}
+
+.main--list > li::marker {
+    color: #60dafb;
+    font-size: 1.5em;
+}
